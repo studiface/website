@@ -226,11 +226,18 @@
                         class="w-full h-auto object-cover rounded-xl sm:rounded-2xl border border-dark-700 relative z-20">
                     <div
                         class="absolute bottom-4 left-4 right-4 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                        <div
-                            class="bg-dark-950/90 backdrop-blur-md p-2 sm:p-3 rounded-lg sm:rounded-xl border border-brand-cyan/40 text-[10px] sm:text-xs font-tech text-brand-cyan text-left shadow-lg">
-                            <p>> Initializing Vision Engine...</p>
-                            <p>> Loading 10M Face Encodings...</p>
-                            <p>> Status: <span class="text-white">Ready for Launch.</span></p>
+                        <div class="bg-black/90 backdrop-blur-xl p-3 rounded-xl border border-brand-cyan/50 text-left shadow-2xl"
+                            dir="ltr">
+                            <div class="flex gap-1.5 mb-2">
+                                <div class="w-2 h-2 rounded-full bg-red-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                            </div>
+                            <div class="font-mono text-[9px] sm:text-xs text-brand-cyan leading-relaxed tracking-wider">
+                                <p class="animate-pulse">>> Initializing AI Engine...</p>
+                                <p>>> Loading Face Database [OK]</p>
+                                <p>>> System Status: <span class="text-white">Ready</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
