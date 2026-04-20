@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <link rel="icon" type="image/png" href="/resources/LOGO.ico">
+    <link rel="apple-touch-icon" href="/resources/LOGO.ico">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-739BN3Z82X');
+    </script>
+
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "wdpozojd06");
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصتنا والتكنولوجيا | رحلة بناء محرك StudiFace</title>
+    <meta name="description"
+        content="من قلب معاناة المصورين في الاستوديوهات إلى بناء أقوى محرك ذكاء اصطناعي عربي للبحث عن الصور. اقرأ قصة StudiFace واكتشف الورقة البيضاء للهندسة المعمارية.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                        tech: ['IBM Plex Sans Arabic', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: { 950: '#050507', 900: '#0A0A0E', 800: '#121218', 700: '#1C1C24', 600: '#2A2A35' },
+                        brand: { cyan: '#00E5FF', blue: '#3B82F6', green: '#10B981', red: '#EF4444', orange: '#F59E0B', purple: '#8B5CF6' }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0V0zm1 1h38v38H1V1z' fill='%2300E5FF' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                    },
+                    boxShadow: {
+                        'neon-cyan': '0 0 40px -5px rgba(0, 229, 255, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .glass-panel {
+            background: rgba(28, 28, 36, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-nav {
+            background: rgba(10, 10, 14, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+        }
+
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #00E5FF 0%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -29px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #00E5FF;
+            border: 3px solid #050507;
+            z-index: 10;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .whitepaper h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-right: 4px solid #00E5FF;
+            padding-right: 1rem;
+        }
+
+        .whitepaper h4 {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .whitepaper p {
+            color: #9CA3AF;
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .whitepaper ul {
+            list-style-type: none;
+            padding-right: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .whitepaper li {
+            color: #9CA3AF;
+            margin-bottom: 0.8rem;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .whitepaper li::before {
+            content: "•";
+            color: #00E5FF;
+            position: absolute;
+            right: -15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-950 text-gray-300 font-sans antialiased relative min-h-screen flex flex-col">
+
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0"></div>
+    <div
+        class="fixed top-1/4 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-brand-cyan/5 blur-[150px] rounded-full pointer-events-none z-0">
+    </div>
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-2 md:gap-4 group cursor-pointer">
+                <img src="resources/LOGO.webp" alt="StudiFace" class="h-8 md:h-10 w-auto object-contain relative z-10"
+                    onerror="this.src='https://placehold.co/40x40/1C1C24/00E5FF?text=S'">
+                <h1 class="text-xl md:text-2xl font-black text-white tracking-wide">
+                    StudiFace <span class="text-brand-cyan text-sm md:text-lg font-medium hidden sm:inline">Vision
+                        AI</span>
+                </h1>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="/"
+                    class="text-gray-400 hover:text-white transition-colors font-bold text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-house"></i> الرئيسية
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow relative z-10 pt-32 pb-20">
+
+        <header class="text-center max-w-4xl mx-auto px-6 mb-20">
+            <span class="text-brand-cyan font-bold tracking-widest text-sm uppercase mb-3 block">Our Story &
+                Technology</span>
+            <h1 class="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">من قلب المعاناة في
+                الاستوديو..<br><span class="text-gradient-cyan">إلى بناء المحرك الأقوى عربياً</span></h1>
+            <p class="text-xl text-gray-400 leading-relaxed">
+                نحن لم نبتكر StudiFace لأننا مبرمجون فقط، بل لأننا مصورون عشنا كابوس الأرشيف يومياً. هذه هي قصتنا، وهذا
+                هو التقرير الهندسي لكيفية حلنا لأكبر مشكلة تواجه استوديوهات التصوير.
+            </p>
+        </header>
+
+        <div class="max-w-5xl mx-auto px-6">
+
+
+            <div class="mb-24 relative">
+                <div class="absolute right-4 top-4 bottom-4 w-1 bg-dark-700 rounded-full"></div>
+
+                <div class="space-y-12 pr-12">
+
+                    <div
+                        class="timeline-item relative glass-panel p-8 rounded-2xl border border-dark-600 hover:border-brand-red/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-brand-red/10 text-brand-red flex items-center justify-center text-xl border border-brand-red/20">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">سنوات من الإحباط خلف الكواليس</h3>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            قبل أن نكتب سطراً برمجياً واحداً، كنا نقف خلف الكاميرات لسنوات طوال. صورنا آلاف الأعراس،
+                            وحفلات التخرج، وجلسات التصوير العائلية. مع مرور الوقت، تحولت أقراصنا الصلبة (Hard Drives)
+                            إلى وحوش رقمية تبتلع تيرابايتات من الذكريات المبعثرة.<br><br>
+                            الكابوس الحقيقي لم يكن في التصوير، بل كان يبدأ عندما يدخل العميل للاستوديو وفي يده صورة
+                            باهتة أو تالفة، طالباً إعادة طباعتها. كنّا نعلم أن النسخة الأصلية موجودة في مكان ما داخل تلك
+                            الأقراص المليئة بمليون صورة، ولكن أين؟
+                        </p>
+                    </div>
+
+                    <div
+                        class="timeline-item relative glass-panel p-8 rounded-2xl border border-dark-600 hover:border-brand-orange/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center text-xl border border-brand-orange/20">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">البحث عن سراب في سوق البرمجيات</h3>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            بدأت رحلة معاناتنا مع "تضييع الوقت". العميل ينتظر، ونحن نفتح المجلدات بشكل عشوائي ومحبط.
+                            جربنا كل الحلول المتاحة في السوق؛ استخدمنا برامج مثل Adobe Lightroom لتنظيم الكتالوجات،
+                            لكنها كانت عقيمة وتتطلب وسوماً (Tags) يدوية مرهقة.<br><br>
+                            لجأنا لخدمات مثل Google Photos، لكن الصدمة كانت في <strong
+                                class="text-brand-orange">"الخصوصية"</strong> وحجم البيانات.. كيف يمكن لمصور محترف أن
+                            يرفع صور عائلات وزبائنه الخاصة إلى خوادم سحابية (Cloud) أجنبية؟ كان ذلك انتحاراً مهنياً
+                            وانتهاكاً لسرية عملائنا.
+                        </p>
+                    </div>
+
+                    <div
+                        class="timeline-item relative glass-panel p-8 rounded-2xl border border-dark-600 hover:border-brand-cyan/50 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl border border-brand-cyan/20">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">قرار التمرد وبناء الحل الجذري</h3>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            أدركنا أن السوق العالمي لا يمتلك حلاً مصمماً خصيصاً "لبيئة استوديو التصوير". كنا بحاجة ماسة
+                            لبرنامج يمتلك ذكاءً خارقاً للتعرف على الوجوه، وفي نفس الوقت يعمل محلياً (Offline) بنسبة 100%
+                            دون أن يلمس الإنترنت.<br><br>
+                            من هنا، قررنا التوقف عن البحث، وبدأنا رحلة التعلم والهندسة. قضينا آلاف الساعات في دراسة
+                            خوارزميات الرؤية الحاسوبية، الشبكات العصبية العميقة، وهيكلة قواعد البيانات فائقة الكثافة. لم
+                            يكن هدفنا صنع برنامج، بل بناء "آلة زمن" تسترجع صور العميل في جزء من الثانية. وبعد سنوات من
+                            التجارب والتحسين المستمر.. وُلد محرك <strong class="text-white">StudiFace</strong>.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="bg-dark-900 border border-dark-700 rounded-3xl p-8 lg:p-12 shadow-2xl whitepaper relative overflow-hidden">
+
+                <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+                    <i class="fa-solid fa-network-wired text-9xl text-brand-cyan"></i>
+                </div>
+
+                <div class="text-center border-b border-dark-700 pb-10 mb-10 relative z-10">
+                    <span
+                        class="inline-block bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/30 px-4 py-1 rounded-full text-xs font-bold font-tech mb-4 tracking-widest">ENGINEERING
+                        WHITEPAPER V2.0</span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-white mb-4 mt-0 border-none p-0">الهندسة المعمارية
+                        لمحرك StudiFace</h2>
+                    <p class="text-gray-400 text-lg max-w-2xl mx-auto">كيف بنينا محرك بحث ذكاء اصطناعي قادر على فلترة
+                        مئات الآلاف من الصور في أقل من ثانية محلياً؟</p>
+                </div>
+
+                <div class="relative z-10">
+                    <p class="text-lg text-gray-300 font-medium mb-8">
+                        "في عالم استوديوهات التصوير الحديثة، لم يعد التحدي هو 'تخزين الصور'، بل 'كيفية استرجاعها بدقة
+                        وسرعة'. يوثق هذا التقرير الهندسي البنية التحتية المعقدة والحلول الخوارزمية التي تم تطويرها داخل
+                        مختبرات StudiFace لبناء محرك بحث بصري (Visual Search Engine) غير مسبوق. نظام مصمم ليتحمل أعباء
+                        معالجة مئات التيرابايتات من البيانات، والعمل بكفاءة تامة في بيئة محلية مغلقة بنسبة 100% لضمان
+                        أقصى درجات الأمان."
+                    </p>
+
+                    <h3>1. بنية الفهرسة فائقة الكثافة (Hyper-Dense Indexing Architecture)</h3>
+                    <p>في الأنظمة التقليدية، ينهار أداء الحاسوب عند البحث في أكثر من 10,000 صورة. لتجاوز هذا الحاجز،
+                        تخلت StudiFace عن قواعد البيانات التقليدية وطورت معمارية فهرسة شعاعية (Vector-Based Indexing):
+                    </p>
+                    <ul>
+                        <li><strong>تحويل الملامح إلى شيفرات رياضية:</strong> بدلاً من حفظ الصورة، يقوم محرك الشبكات
+                            العصبية الخاص بنا بتحويل وجه العميل إلى مصفوفة رقمية معقدة مكونة من 512 بُعداً (Dimensional
+                            Vector).</li>
+                        <li><strong>أداء لا نهائي:</strong> بفضل هذه الهندسة، يمكن للبرنامج استيعاب <strong>أكثر من 2.5
+                                مليون وجه</strong> في مساحة لا تتجاوز بضعة ميجابايتات في الذاكرة العشوائية (RAM).</li>
+                        <li><strong>سرعة البحث البرقي:</strong> عند إدخال صورة للبحث، يطبق المحرك خوارزميات المسافة
+                            الهندسية للبحث في مئات الآلاف من البصمات، واستخراج التطابق الدقيق في <strong>0.08 ثانية
+                                فقط</strong>.</li>
+                    </ul>
+
+                    <h3>2. خوارزمية حارس البوابة والفلترة الذكية (The Gatekeeper Algorithm)</h3>
+                    <p>التحدي الأكبر في الاستوديوهات هو "أوراق الطباعة المجمعة" (ID Sheets) التي تحتوي على عشرات النسخ
+                        لنفس الوجه. إجبار الذكاء الاصطناعي على تحليلها جميعاً يسبب شللاً لمعالج الحاسوب (CPU
+                        Bottleneck).</p>
+                    <ul>
+                        <li><strong>الابتكار:</strong> تم تطوير بوابة فلترة استباقية (Pre-processing Gatekeeper) تعتمد
+                            على تحليل المدرج التكراري اللوني والضوئي بدقة 99.3%.</li>
+                        <li><strong>اختبارات الضغط (Stress Testing):</strong> عند تمرير مجلد يحتوي على 125,000 صورة
+                            (منها 40% صور مكررة رقمياً)، استطاعت خوارزمية البوابة تدمير التكرار الزائف قبل وصوله للمعالج
+                            العصبي، مما رفع سرعة الاستيعاب الكلية بنسبة <strong>340%</strong> مقارنة بالأنظمة التقليدية.
+                        </li>
+                    </ul>
+
+                    <h3>3. هندسة الإدارة الذكية للموارد (Smart Resource Management)</h3>
+                    <p>تم تصميم StudiFace ليعمل كـ "شبح" في خلفية النظام، بحيث لا يعيق أعمال المصور الأخرى على جهازه.
+                    </p>
+                    <ul>
+                        <li><strong>صفر بالمئة استهلاك (Zero Idle CPU):</strong> تم بناء نظام تفاعلي متقدم يوقف جميع
+                            العمليات الحسابية وحلقات التحديث في أجزاء الثانية التي لا يستخدم فيها البرنامج، لينخفض
+                            استهلاك المعالج إلى 0% في وضع السكون.</li>
+                        <li><strong>نظام السجل اللحظي (Lazy Journaling):</strong> لضمان عدم اختناق القرص الصلب عند أرشفة
+                            مئات الآلاف من الصور، يقوم النظام بحفظ البيانات في "ذاكرة عازلة" سريعة، وتأجيل الكتابة
+                            النهائية على القرص حتى اكتمال المعالجة.</li>
+                        <li><strong>الحماية من انقطاع الطاقة:</strong> بفضل هندسة السجل اللحظي، حتى لو انقطع التيار
+                            الكهربائي أثناء أرشفة 50,000 صورة، سيتذكر المحرك تماماً أين توقف دون فقدان بايت واحد من
+                            البيانات.</li>
+                    </ul>
+
+                    <h3>4. محرك البحث الحي الهجين (Hybrid Live Search Engine)</h3>
+                    <p>ابتكرنا بيئة معالجة لحظية (Real-time Processing) للتعامل مع المجلدات غير المؤرشفة (مثل صور زفاف
+                        الأمس المستعجلة).</p>
+                    <ul>
+                        <li>يقوم المحرك بدمج الفلترة الزمنية الدقيقة مع قراءة الذاكرة المسبقة، لتجاوز الملفات غير
+                            المطابقة زمنياً في أجزاء من الملي ثانية.</li>
+                        <li>أظهرت التجارب الميدانية قدرة المحرك على اختراق مجلد عشوائي بحجم 80 جيجابايت، واستخراج كافة
+                            صور "الهدف" في أقل من <strong>1.2 دقيقة</strong> معتمداً على قوة التوازي البرمجي
+                            (Multi-threading).</li>
+                    </ul>
+
+                    <h3>5. إطلاق العنان لتسريع العتاد (Hardware Acceleration & GPU)</h3>
+                    <p>تمت كتابة الكود المصدري للمحرك ليدعم التبديل الديناميكي بين المعالج المركزي (CPU) ومعالج
+                        الرسوميات (GPU).</p>
+                    <ul>
+                        <li><strong>قوة الحوسبة المتوازية:</strong> للمستخدمين الذين يمتلكون بطاقات شاشة من فئة
+                            (NVIDIA)، يمكن تفعيل بروتوكولات الحوسبة المتقدمة لفتح مسارات معالجة متوازية.</li>
+                        <li><strong>النتيجة:</strong> بدلاً من معالجة صورة واحدة في كل دورة، يعالج النظام حزماً من الصور
+                            دفعة واحدة (Batch Inferencing)، لتقفز سرعة الأرشفة لتتجاوز <strong>آلاف الصور في الدقيقة
+                                الواحدة</strong>، مما يجعل أرشفة تاريخ الاستوديو بأكمله مسألة دقائق معدودة.</li>
+                    </ul>
+                    <div class="bg-dark-950 p-4 rounded-lg border border-dark-600 mt-4 text-sm">
+                        <i class="fa-solid fa-circle-info text-brand-blue mr-2"></i> <strong class="text-white">ملاحظة
+                            الشفافية:</strong> تفعيل سرعات الـ GPU القصوى يتطلب إعدادات بيئية مخصصة لبطاقتك، وهو متاح
+                        حصرياً كخدمة دعم متقدمة لمشتركي النسخة الاحترافية (PRO).
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-10 border-t border-dark-700 text-center relative z-10">
+                    <h3 class="text-2xl font-black text-white mb-4 mt-0 border-none p-0">وراء الواجهة البسيطة.. تقف آلة
+                        هندسية معقدة</h3>
+                    <p class="text-gray-400 mb-8 max-w-2xl mx-auto">نظام صُمم بصرامة رياضية من قبل مصورين.. من أجل
+                        المصورين. ليكون الحارس الأمين والمنفذ الأسرع لأرشيفك، ليضمن لك استثماراً تقنياً يضاعف إنتاجيتك
+                        دون المساومة أبداً على خصوصية بيانات عملائك.</p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="/contact/"
+                            class="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan text-dark-950 px-8 py-4 rounded-xl font-black transition-all hover:scale-105 shadow-neon-cyan flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-crown"></i> احصل على نسختك الاحترافية الآن
+                        </a>
+                        <a href="/download/"
+                            class="glass-panel text-white hover:border-brand-cyan px-8 py-4 rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-download text-brand-cyan"></i> جرب النسخة المجانية
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark-950 border-t border-dark-700 pt-20 pb-10 relative z-10 overflow-hidden">
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-cyan/50 to-transparent">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+
+
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-12">
+
+
+                <div class="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-right">
+
+
+                    <div class="flex items-center justify-center md:justify-start gap-4 mb-6 w-full">
+                        <img src="/resources/LOGO.webp" alt="شعار برنامج StudiFace لاستوديوهات التصوير"
+                            class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                            onerror="this.style.display='none'">
+                        <h2 class="text-3xl font-black text-white tracking-wide">
+                            StudiFace <span class="text-brand-cyan text-lg font-medium">Vision AI</span>
+                        </h2>
+                    </div>
+
+
+                    <p class="text-gray-400 mb-6 leading-relaxed max-w-sm">
+                        صُنع بحب وإتقان لتسهيل حياة المصورين واستوديوهات الإنتاج الفني. نؤمن بأن الذكاء الاصطناعي وجد
+                        لخدمة إبداعك، وليس العكس.
+                    </p>
+
+
+                    <div class="flex justify-center md:justify-start gap-4 w-full">
+
+                        <a href="https://web.facebook.com/StudiFaceAi/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-dark-800 border border-dark-600 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-blue hover:border-brand-blue transition-all duration-300">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/StudiFaceAi/" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-dark-800 border border-dark-600 flex items-center justify-center text-gray-400 hover:text-white hover:bg-pink-600 hover:border-pink-600 transition-all duration-300">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@StudiFace" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-dark-800 border border-dark-600 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-red hover:border-brand-red transition-all duration-300">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/212695106101" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 rounded-full bg-dark-800 border border-dark-600 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-green hover:border-brand-green transition-all duration-300">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">روابط سريعة
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="/how-it-works/"
+                                class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
+                                    class="fa-solid fa-angle-left text-xs"></i> دليل استخدام البرنامج</a></li>
+                        <li><a href="/faq/"
+                                class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-angle-left text-xs"></i> الأسئلة الشائعة (FAQ)</a></li>
+                        <li><a href="/about/"
+                                class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
+                                    class="fa-solid fa-angle-left text-xs"></i> قصتنا والتكنولوجيا</a></li>
+                        <li><a href="/legal/"
+                                class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
+                                    class="fa-solid fa-angle-left text-xs"></i> المركز القانوني والخصوصية</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="md:col-span-4">
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">الدعم
+                        والمساعدة</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-dark-800 p-2 rounded-lg text-brand-cyan border border-dark-600"><i
+                                    class="fa-solid fa-headset"></i></div>
+                            <div>
+                                <span class="block text-sm text-gray-500">تحتاج مساعدة؟</span>
+                                <a href="/contact/" class="text-white hover:text-brand-cyan font-bold">انتقل لمركز
+                                    الدعم الفني</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-dark-800 p-2 rounded-lg text-brand-green border border-dark-600"><i
+                                    class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <span class="block text-sm text-gray-500">مبيعات وتفعيل (واتساب)</span>
+                                <a href="https://wa.me/212695106101"
+                                    class="text-white hover:text-brand-green font-tech dir-ltr inline-block">212695106101</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div
+                class="border-t border-dark-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
+                <p>جميع الحقوق محفوظة &copy; 2026 لبرنامج <strong class="text-gray-300">StudiFace</strong></p>
+                <div class="flex items-center gap-2">
+                    <span>صُنع بعقول عربية</span> <i class="fa-solid fa-heart text-brand-red animate-pulse"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
