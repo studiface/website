@@ -379,7 +379,7 @@
             <div class="hidden lg:flex items-center gap-8">
                 <a href="#problem"
                     class="text-gray-400 hover:text-brand-cyan transition-colors font-bold text-sm tracking-wide">المشكلة</a>
-                <a href="#how-it-works"
+                <a href="/how-it-works/"
                     class="text-gray-400 hover:text-brand-cyan transition-colors font-bold text-sm tracking-wide">كيف
                     يعمل</a>
                 <a href="#advanced-features"
@@ -493,7 +493,7 @@
                     class="w-full sm:w-auto bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan text-dark-950 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform hover:scale-105 shadow-neon-cyan flex items-center justify-center gap-3">
                     <i class="fa-solid fa-rocket"></i> جرب النسخة المجانية الآن
                 </a>
-                <a href="#how-it-works"
+                <a href="#explainer-video"
                     class="w-full sm:w-auto glass-panel hover:bg-dark-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3 border border-dark-600 hover:border-brand-cyan/50">
                     <i class="fa-regular fa-circle-play text-brand-cyan"></i> شاهد كيف يعمل
                 </a>
@@ -502,60 +502,76 @@
         </div>
     </header>
 
+    </header>
+
     <div class="border-y border-dark-700 bg-dark-900/80 backdrop-blur-sm relative z-10 py-6">
         <div
             class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center lg:justify-between items-center gap-8 text-gray-400 hover:text-gray-300 transition-colors font-bold text-sm">
-
-
-            <div class="flex items-center gap-3">
-                <i
+            <div class="flex items-center gap-3"><i
                     class="fa-solid fa-bullseye text-xl text-brand-cyan/70 drop-shadow-[0_0_8px_rgba(0,229,255,0.4)]"></i>
-                دقة تعرّف خارقة للوجوه
-            </div>
-
-
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-bolt text-xl text-brand-purple/70 drop-shadow-[0_0_8px_rgba(139,92,246,0.4)]"></i>
-                بحث في ملايين الصور بلحظات
-            </div>
-
-
-            <div class="flex items-center gap-3">
-                <i
+                دقة تعرّف خارقة للوجوه</div>
+            <div class="flex items-center gap-3"><i
+                    class="fa-solid fa-bolt text-xl text-brand-purple/70 drop-shadow-[0_0_8px_rgba(139,92,246,0.4)]"></i>
+                بحث في ملايين الصور بلحظات</div>
+            <div class="flex items-center gap-3"><i
                     class="fa-solid fa-shield-halved text-xl text-brand-green/70 drop-shadow-[0_0_8px_rgba(16,185,129,0.4)]"></i>
-                خصوصية تامة بدون إنترنت
-            </div>
-
-
-            <div class="flex items-center gap-3">
-                <i
+                خصوصية تامة بدون إنترنت</div>
+            <div class="flex items-center gap-3"><i
                     class="fa-solid fa-wand-magic-sparkles text-xl text-brand-blue/70 drop-shadow-[0_0_8px_rgba(59,130,246,0.4)]"></i>
-                واجهة ذكية لا تحتاج لخبرة
-            </div>
-
+                واجهة ذكية لا تحتاج لخبرة</div>
         </div>
     </div>
 
 
-    <section id="problem" class="py-24 relative z-10">
+    <section id="explainer-video" class="py-20 relative z-10 overflow-hidden bg-dark-950">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-64 bg-brand-cyan/10 blur-[120px] rounded-full pointer-events-none z-0">
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-10">
+                <span class="text-brand-cyan font-bold tracking-widest text-sm uppercase mb-3 block">Watch in
+                    Action</span>
+                <h2 class="text-3xl lg:text-4xl font-black text-white mb-4">شاهد السحر <span
+                        class="text-gradient-cyan">في
+                        90 ثانية!</span></h2>
+                <p class="text-gray-400">اكتشف كيف سيغير StudiFace طريقة عملك في الاستوديو للأبد.</p>
+            </div>
+
+            <div
+                class="glass-panel p-2 md:p-4 rounded-[2rem] border border-brand-cyan/20 shadow-neon-cyan relative group">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-brand-cyan/0 via-brand-cyan/5 to-brand-cyan/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-[2rem] pointer-events-none">
+                </div>
+                <div class="relative aspect-video rounded-2xl overflow-hidden bg-dark-950 border border-dark-600">
+                    <iframe class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/4Fs99AZa07s?rel=0&showinfo=0&modestbranding=1"
+                        title="شرح برنامج StudiFace" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="problem" class="py-24 relative z-10 border-t border-dark-700">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-
                 <div>
                     <h2 class="text-3xl lg:text-5xl font-black text-white mb-6 leading-tight">
                         استوديوك يخسر المال <br><span class="text-brand-red">بسبب الأرشيف الميت!</span>
                     </h2>
                     <p class="text-gray-400 text-lg mb-10 leading-relaxed">
                         في كل مرة تطلب من العميل "العودة غداً" لأنك تحتاج وقتاً للبحث عن صورته القديمة، أو عندما تضطر
-                        لعمل (Scan)
-                        لبطاقته فتنتج صورة رديئة تُرفض رسمياً.. <strong class="text-white">أنت تخسر المال والمصداقية
+                        لعمل
+                        (Scan) لبطاقته فتنتج صورة رديئة تُرفض رسمياً.. <strong class="text-white">أنت تخسر المال
+                            والمصداقية
                             معاً.</strong>
                     </p>
 
-
                     <div class="space-y-6">
-
                         <div
                             class="glass-panel p-6 rounded-2xl border-r-4 border-r-brand-red relative overflow-hidden group">
                             <div class="absolute inset-0 bg-brand-red/5 group-hover:bg-brand-red/10 transition-colors">
@@ -569,15 +585,12 @@
                                     <h3 class="text-white font-bold text-xl mb-2">الحل الكارثي (الطريقة القديمة)</h3>
                                     <p class="text-gray-400 text-base leading-relaxed">
                                         العميل يعطيك تاريخاً خاطئاً، لتبدأ أنت رحلة بحث عمياء داخل "الهارد ديسك". الزبون
-                                        يذهب ويأتي عدة
-                                        مرات، أو تضطره لالتقاط صورة جديدة رغم عدم استعداده. هذا الاستنزاف لجهدك يجعلك
-                                        تكره طلبات إعادة
-                                        الطباعة بدلاً من أن تعتبرها ربحاً صافياً وسهلاً.
+                                        يذهب ويأتي عدة مرات، أو تضطره لالتقاط صورة جديدة رغم عدم استعداده. هذا الاستنزاف
+                                        لجهدك يجعلك تكره طلبات إعادة الطباعة بدلاً من أن تعتبرها ربحاً صافياً وسهلاً.
                                     </p>
                                 </div>
                             </div>
                         </div>
-
 
                         <div
                             class="glass-panel p-6 rounded-2xl border-r-4 border-r-brand-cyan relative overflow-hidden group">
@@ -593,10 +606,9 @@
                                     <h3 class="text-white font-bold text-xl mb-2">الحل السحري مع StudiFace</h3>
                                     <p class="text-gray-400 text-base leading-relaxed">
                                         حول أرشيفك من "مقبرة للصور" إلى ماكينة أرباح. دع العميل يعطيك أي صورة قديمة له،
-                                        وسيقوم الذكاء
-                                        الاصطناعي بتخطي أخطاء التواريخ، واستخراج الملف الأصلي عالي الجودة في لمح البصر.
-                                        الخدمة الفورية
-                                        تعني زبوناً سعيداً وأرباحاً مضاعفة.
+                                        وسيقوم الذكاء الاصطناعي بتخطي أخطاء التواريخ، واستخراج الملف الأصلي عالي الجودة
+                                        في
+                                        لمح البصر. الخدمة الفورية تعني زبوناً سعيداً وأرباحاً مضاعفة.
                                     </p>
                                 </div>
                             </div>
@@ -604,23 +616,15 @@
                     </div>
                 </div>
 
-
                 <div class="relative lg:pl-10">
                     <div class="absolute -inset-4 bg-brand-red/10 blur-2xl rounded-full"></div>
-
                     <div class="relative rounded-3xl overflow-hidden border border-dark-600 shadow-2xl">
                         <img src="resources/C2.webp" alt="البحث اليدوي"
                             class="w-full h-full object-cover transition-all duration-700">
-
-
                         <div class="absolute inset-0 bg-gradient-to-t from-dark-950/80 via-transparent to-transparent">
                         </div>
-
-
                         <div class="absolute bottom-4 left-3 right-3 md:bottom-6 md:left-6 md:right-6">
                             <div class="flex gap-2 md:gap-4 w-full">
-
-
                                 <div
                                     class="w-1/2 glass-panel p-2 md:p-4 rounded-lg md:rounded-xl text-center border border-brand-red/40 bg-dark-950/70 backdrop-blur-md">
                                     <p
@@ -628,15 +632,12 @@
                                         <i class="fa-solid fa-spinner fa-spin mr-1"></i> المتوقع: 4 ساعات بحث
                                     </p>
                                 </div>
-
-
                                 <div
                                     class="w-1/2 glass-panel p-2 md:p-4 rounded-lg md:rounded-xl text-center border border-brand-cyan/40 bg-brand-cyan/5 backdrop-blur-md">
                                     <p class="font-tech text-brand-cyan font-bold text-[10px] sm:text-xs md:text-sm">
                                         <i class="fa-solid fa-bolt mr-1"></i> ظهرت: في 0.1 ثانية
                                     </p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -646,9 +647,7 @@
     </section>
 
 
-
-    <section id="how-it-works" class="py-24 bg-dark-900 relative z-10 border-y border-dark-700">
-
+    <section id="methodology" class="py-24 bg-dark-900 relative z-10 border-y border-dark-700">
         <div
             class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-brand-cyan/20 to-transparent hidden lg:block">
         </div>
@@ -656,11 +655,12 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-20">
                 <span class="text-brand-cyan font-bold tracking-widest text-sm uppercase mb-3 block">Methodology</span>
-                <h2 class="text-4xl lg:text-5xl font-black text-white mb-6">ثلاث خطوات تصنع <span
-                        class="text-gradient-cyan">السحر التقني</span></h2>
+                <h2 class="text-4xl lg:text-5xl font-black text-white mb-6">المنهجية التقنية.. <span
+                        class="text-gradient-cyan">كيف تتم المطابقة؟</span></h2>
                 <p class="text-xl text-gray-400">قل وداعاً لعناء البحث للأبد. نظامنا يحول استوديوك إلى قاعدة بيانات ذكية
                     مدارة بآلة لا تخطئ.</p>
             </div>
+
             <div class="space-y-32">
 
 
@@ -672,8 +672,10 @@
                             <span class="text-brand-green">الاستيعاب:</span> بناء الذاكرة الفائقة
                         </h3>
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            بدلاً من البحث اليدوي كل مرة، دع البرنامج يقوم بالعمل الشاق مرة واحدة فقط. حدد مجلدات
-                            الأرشيف الخاصة بك، وسيقوم الذكاء الاصطناعي بقراءة كل صورة واستخراج "بصمة الوجه الرقمية"
+                            بدلاً من البحث اليدوي كل مرة، دع البرنامج يقوم بالعمل الشاق مرة واحدة فقط. حدد
+                            مجلدات
+                            الأرشيف الخاصة بك، وسيقوم الذكاء الاصطناعي بقراءة كل صورة واستخراج "بصمة الوجه
+                            الرقمية"
                             وحفظها في قاعدة بيانات ذكية خفيفة جداً.
                         </p>
                     </div>
@@ -701,7 +703,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">لا ينسخ الصور إطلاقاً (أمان للمساحة)</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">يحفظ البصمة الحيوية ومسار الصورة
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">يحفظ البصمة الحيوية
+                                    ومسار الصورة
                                     الأصلية فقط. مليون وجه لا يتجاوز حجمهم بضعة ميجابايتات.</p>
                             </div>
                         </div>
@@ -713,7 +716,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">يتجاهل المكرر بذكاء</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">يتعرف النظام على الصور المجمعة
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">يتعرف النظام على
+                                    الصور المجمعة
                                     للطباعة (ID Sheets) ويتجاهل الوجوه المكررة برمجياً.</p>
                             </div>
                         </div>
@@ -725,7 +729,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">نظام السجل اللحظي</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">حتى لو انطفأ حاسوبك فجأة، النظام
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">حتى لو انطفأ حاسوبك
+                                    فجأة، النظام
                                     يحفظ تقدمك لحظة بلحظة ليكمل من حيث توقف دون إعادة.</p>
                             </div>
                         </div>
@@ -742,7 +747,8 @@
                             <span class="text-brand-cyan">المطابقة:</span> البحث البرقي اللحظي
                         </h3>
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            أعط البرنامج أي صورة للعميل. سيقوم النظام بمقارنة ملامح وجهه مع ملايين الوجوه الموجودة في
+                            أعط البرنامج أي صورة للعميل. سيقوم النظام بمقارنة ملامح وجهه مع ملايين الوجوه
+                            الموجودة في
                             أرشيفك واستخراج النتيجة في
                             <strong class="text-white text-gradient-cyan">جزء من الثانية</strong>.
                         </p>
@@ -771,7 +777,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">تحكم كامل بمستوى الحساسية</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">قلل مستوى حساسية المطابقة بضغطة
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">قلل مستوى حساسية
+                                    المطابقة بضغطة
                                     زر
                                     ليتمكن الذكاء الاصطناعي من إيجاد العميل رغم التغيرات العمرية.</p>
                             </div>
@@ -785,7 +792,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">فلترة تاريخية صارمة</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">فعل "البحث الزمني" ليتجاهل
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">فعل "البحث الزمني"
+                                    ليتجاهل
                                     البرنامج باقي السنوات تماماً ليعطيك نتائج دقيقة 100%.</p>
                             </div>
                         </div>
@@ -797,7 +805,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">تصدير وطباعة مباشرة</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">افتح مسار المجلد الأصلي، أو
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">افتح مسار المجلد
+                                    الأصلي، أو
                                     صَدّر
                                     الصورة لسطح المكتب، أو أرسلها للطابعة فوراً من الواجهة.</p>
                             </div>
@@ -815,8 +824,10 @@
                             <span class="text-brand-orange">الإنقاذ:</span> البحث الحي والمباشر
                         </h3>
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            لنفترض أن لديك زفافاً صورته بالأمس ولم تقم بإدخاله للقاعدة بعد وجاءك العريس يطلب صوره.
-                            استخدم <strong class="text-white text-gradient-gold">أداة البحث الحي</strong> لفلترة المجلد
+                            لنفترض أن لديك زفافاً صورته بالأمس ولم تقم بإدخاله للقاعدة بعد وجاءك العريس يطلب
+                            صوره.
+                            استخدم <strong class="text-white text-gradient-gold">أداة البحث الحي</strong>
+                            لفلترة المجلد
                             كاملاً واستخراج صوره فوراً.
                         </p>
                     </div>
@@ -844,7 +855,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">لا يتطلب أرشفة مسبقة</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">حدد المجلد الجديد أو (SD Card)
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">حدد المجلد الجديد أو
+                                    (SD Card)
                                     مباشرة، وسيبدأ النظام بقراءة الصور واستخراج الهدف لحظياً.</p>
                             </div>
                         </div>
@@ -856,7 +868,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">تصدير تلقائي للذاكرة</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">أثناء البحث الحي، يمكن للبرنامج
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">أثناء البحث الحي،
+                                    يمكن للبرنامج
                                     حفظ بصمات الوجوه الجديدة في قاعدة البيانات الأساسية للمستقبل.</p>
                             </div>
                         </div>
@@ -868,7 +881,8 @@
                             </div>
                             <div>
                                 <h4 class="text-white font-bold">تصدير جماعي لتسليم سريع</h4>
-                                <p class="text-base text-gray-400 mt-1 leading-relaxed">بمجرد أن يفرز النظام صور العميل،
+                                <p class="text-base text-gray-400 mt-1 leading-relaxed">بمجرد أن يفرز النظام
+                                    صور العميل،
                                     اضغط على "تصدير الكل" لنسخها في مجلد منفصل جاهز للتسليم.</p>
                             </div>
                         </div>
@@ -889,7 +903,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-black text-white mb-4">ترسانة من <span class="text-brand-purple">القدرات
                         الخارقة</span></h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">لم نكتفِ بالبحث العادي. قمنا بتطوير أدوات ذكية تحل
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">لم نكتفِ بالبحث العادي. قمنا بتطوير أدوات
+                    ذكية تحل
                     أكثر المشاكل المزعجة التي تواجهك في الاستوديو يومياً.</p>
             </div>
 
@@ -903,9 +918,11 @@
                         <i class="fa-solid fa-folder-tree text-2xl text-brand-purple shadow-neon-purple"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">حماية الأرشيف عند تغيير الهارد</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">هل اشتريت قرص تخزين جديد ونقلت كل صورك إليه؟ لا
+                    <p class="text-gray-400 text-base leading-relaxed">هل اشتريت قرص تخزين جديد ونقلت كل
+                        صورك إليه؟ لا
                         تقلق، لن
-                        تضطر لإعادة مسح الصور من الصفر. بضغطة زر، سيتعرف البرنامج على المكان الجديد وتستمر بالعمل فوراً.
+                        تضطر لإعادة مسح الصور من الصفر. بضغطة زر، سيتعرف البرنامج على المكان الجديد وتستمر
+                        بالعمل فوراً.
                     </p>
                 </div>
 
@@ -917,9 +934,11 @@
                         <i class="fa-regular fa-calendar-check text-2xl text-brand-cyan shadow-neon-cyan"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">بحث ذكي بالسنة والشهر</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">العميل يتذكر متى التقط صورته؟ استغل هذه المعلومة!
+                    <p class="text-gray-400 text-base leading-relaxed">العميل يتذكر متى التقط صورته؟ استغل
+                        هذه المعلومة!
                         حدد السنة
-                        أو الشهر، وسيقوم البرنامج بتجاهل باقي السنوات تماماً، مما يمنحك دقة لا تخطئ وسرعة مضاعفة.</p>
+                        أو الشهر، وسيقوم البرنامج بتجاهل باقي السنوات تماماً، مما يمنحك دقة لا تخطئ وسرعة
+                        مضاعفة.</p>
                 </div>
 
 
@@ -930,10 +949,12 @@
                         <i class="fa-solid fa-clone text-2xl text-brand-green shadow-neon-green"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">تجاهل صور "الباسبور" المكررة</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">البرنامج يفهم بيئة الاستوديو! فهو يكتشف أوراق
+                    <p class="text-gray-400 text-base leading-relaxed">البرنامج يفهم بيئة الاستوديو! فهو
+                        يكتشف أوراق
                         الصور
                         المجمعة
-                        للطباعة ويتجاهل الوجوه المكررة تلقائياً، ليحافظ على سرعة جهازك ويمنع الفوضى في النتائج.</p>
+                        للطباعة ويتجاهل الوجوه المكررة تلقائياً، ليحافظ على سرعة جهازك ويمنع الفوضى في
+                        النتائج.</p>
                 </div>
 
 
@@ -944,10 +965,12 @@
                         <i class="fa-solid fa-floppy-disk text-2xl text-brand-orange shadow-neon-orange"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">أمان تام ضد انقطاع الكهرباء</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">الكهرباء انقطعت فجأة وجهازك يقوم بأرشفة آلاف
+                    <p class="text-gray-400 text-base leading-relaxed">الكهرباء انقطعت فجأة وجهازك يقوم
+                        بأرشفة آلاف
                         الصور؟
                         لا
-                        مشكلة إطلاقاً. النظام يحفظ تقدمك أولاً بأول، وسيكمل من حيث توقف بمجرد تشغيله، دون أن تفقد جهدك.
+                        مشكلة إطلاقاً. النظام يحفظ تقدمك أولاً بأول، وسيكمل من حيث توقف بمجرد تشغيله، دون أن
+                        تفقد جهدك.
                     </p>
                 </div>
 
@@ -959,10 +982,12 @@
                         <i class="fa-solid fa-print text-2xl text-brand-blue shadow-neon-blue"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">من البحث إلى الطباعة مباشرة</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">وجدتها؟ رائع! من نفس الشاشة وبدون فتح مجلدات
+                    <p class="text-gray-400 text-base leading-relaxed">وجدتها؟ رائع! من نفس الشاشة وبدون فتح
+                        مجلدات
                         معقدة،
                         يمكنك
-                        تصدير الصورة لسطح المكتب لتسليمها للعميل، أو إرسالها لطابعة الاستوديو الخاصة بك بضغطة زر واحدة.
+                        تصدير الصورة لسطح المكتب لتسليمها للعميل، أو إرسالها لطابعة الاستوديو الخاصة بك
+                        بضغطة زر واحدة.
                     </p>
                 </div>
 
@@ -974,9 +999,11 @@
                         <i class="fa-solid fa-code-merge text-2xl text-brand-red shadow-neon-red"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">دمج الأرشيفات المتفرقة</h3>
-                    <p class="text-gray-400 text-base leading-relaxed">هل قمت بأرشفة صور الأعراس في ملف، وصور التخرج في
+                    <p class="text-gray-400 text-base leading-relaxed">هل قمت بأرشفة صور الأعراس في ملف،
+                        وصور التخرج في
                         ملف آخر؟
-                        الأداة تسمح لك بدمج أرشيفاتك المتفرقة في قاعدة بيانات واحدة عملاقة وذكية، لتسهيل البحث الشامل.
+                        الأداة تسمح لك بدمج أرشيفاتك المتفرقة في قاعدة بيانات واحدة عملاقة وذكية، لتسهيل
+                        البحث الشامل.
                     </p>
                 </div>
 
@@ -999,14 +1026,18 @@
 
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mb-16">
                 <div class="lg:w-1/2 text-center lg:text-right">
-                    <span class="text-brand-blue font-bold tracking-widest text-sm uppercase mb-3 block">Built By
+                    <span class="text-brand-blue font-bold tracking-widest text-sm uppercase mb-3 block">Built
+                        By
                         Photographers</span>
-                    <h2 class="text-3xl lg:text-4xl font-black text-white mb-6 leading-tight">هندسة برمجية صلبة..
+                    <h2 class="text-3xl lg:text-4xl font-black text-white mb-6 leading-tight">هندسة برمجية
+                        صلبة..
                         <br><span class="text-brand-cyan">صُممت لتحمل أقسى الضغوط!</span>
                     </h2>
                     <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                        نحن لم نبتكر StudiFace لأننا مبرمجون، بل لأننا مصورون عشنا كابوس الأرشيف. لقد قمنا بإخضاع محرك
-                        الذكاء الاصطناعي لاختبارات قاسية لمعالجة اختناقات الأداء، والنتيجة؟ نظام خفيف لا يستهلك موارد
+                        نحن لم نبتكر StudiFace لأننا مبرمجون، بل لأننا مصورون عشنا كابوس الأرشيف. لقد قمنا
+                        بإخضاع محرك
+                        الذكاء الاصطناعي لاختبارات قاسية لمعالجة اختناقات الأداء، والنتيجة؟ نظام خفيف لا
+                        يستهلك موارد
                         حاسوبك، ودقة مرعبة تفرق حتى بين التوائم!
                     </p>
                     <a href="/about/"
@@ -1023,8 +1054,10 @@
                         <i
                             class="fa-solid fa-microchip text-2xl text-brand-cyan mb-4 group-hover:scale-110 transition-transform"></i>
                         <h4 class="text-white font-black text-2xl font-tech mb-2">0%</h4>
-                        <p class="text-sm text-gray-400 font-bold text-white mb-1">استهلاك المعالج في وضع السكون</p>
-                        <p class="text-xs text-gray-500">نظام ذكي يوقف استنزاف الموارد تماماً ليمنع تجميد حاسوبك (Zero
+                        <p class="text-sm text-gray-400 font-bold text-white mb-1">استهلاك المعالج في وضع
+                            السكون</p>
+                        <p class="text-xs text-gray-500">نظام ذكي يوقف استنزاف الموارد تماماً ليمنع تجميد
+                            حاسوبك (Zero
                             Idle
                             CPU).</p>
                     </div>
@@ -1035,8 +1068,10 @@
                             class="fa-solid fa-gauge-high text-2xl text-brand-green mb-4 group-hover:scale-110 transition-transform"></i>
                         <h4 class="text-white font-black text-2xl font-tech mb-2">+1000 <span
                                 class="text-sm text-brand-green/50">*</span></h4>
-                        <p class="text-sm text-gray-400 font-bold text-white mb-1">صورة تُعالج في الدقيقة</p>
-                        <p class="text-xs text-gray-500">بفضل خوارزمية (Gatekeeper) التي تدمر التكرار الرقمي وتسرع
+                        <p class="text-sm text-gray-400 font-bold text-white mb-1">صورة تُعالج في الدقيقة
+                        </p>
+                        <p class="text-xs text-gray-500">بفضل خوارزمية (Gatekeeper) التي تدمر التكرار الرقمي
+                            وتسرع
                             الاستيعاب
                             بنسبة 80%.</p>
                     </div>
@@ -1047,7 +1082,8 @@
                             class="fa-solid fa-user-group text-2xl text-brand-orange mb-4 group-hover:scale-110 transition-transform"></i>
                         <h4 class="text-white font-black text-2xl font-tech mb-2">99.3%</h4>
                         <p class="text-sm text-gray-400 font-bold text-white mb-1">عتبة الفلترة الدقيقة</p>
-                        <p class="text-xs text-gray-500">معايرة رياضية دقيقة جداً تضمن عدم مسح صور (التوائم أو الإخوة)
+                        <p class="text-xs text-gray-500">معايرة رياضية دقيقة جداً تضمن عدم مسح صور (التوائم
+                            أو الإخوة)
                             بالخطأ إطلاقاً.</p>
                     </div>
 
@@ -1057,13 +1093,15 @@
                             class="fa-solid fa-database text-2xl text-brand-purple mb-4 group-hover:scale-110 transition-transform"></i>
                         <h4 class="text-white font-black text-2xl font-tech mb-2">Lazy Saving</h4>
                         <p class="text-sm text-gray-400 font-bold text-white mb-1">نظام السجل اللحظي</p>
-                        <p class="text-xs text-gray-500">تحرير القرص الصلب من الاختناق عبر الإدارة الذكية للذاكرة
+                        <p class="text-xs text-gray-500">تحرير القرص الصلب من الاختناق عبر الإدارة الذكية
+                            للذاكرة
                             وحمايتها
                             من انقطاع الكهرباء.</p>
                     </div>
 
                     <div class="absolute -bottom-8 right-0 text-[10px] text-gray-500 font-tech w-full text-right">
-                        * معدل السرعة الأقصى تم قياسه على أجهزة مزودة ببطاقات شاشة (NVIDIA GPU) مهيأة هندسياً. سرعة
+                        * معدل السرعة الأقصى تم قياسه على أجهزة مزودة ببطاقات شاشة (NVIDIA GPU) مهيأة
+                        هندسياً. سرعة
                         الأجهزة
                         العادية (CPU) ستختلف بحسب المواصفات.
                     </div>
@@ -1081,7 +1119,8 @@
                 class="glass-panel border-2 border-brand-green/30 rounded-3xl p-10 lg:p-16 text-center relative overflow-hidden shadow-[0_10px_50px_rgba(16,185,129,0.15)]">
 
                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div class="w-96 h-96 bg-brand-green/10 rounded-full blur-[100px] animate-pulse-slow"></div>
+                    <div class="w-96 h-96 bg-brand-green/10 rounded-full blur-[100px] animate-pulse-slow">
+                    </div>
                 </div>
 
                 <div class="relative z-10">
@@ -1090,7 +1129,8 @@
                         class="mx-auto w-28 h-28 bg-brand-green/10 rounded-full border-2 border-brand-green/30 flex items-center justify-center mb-8 relative group">
 
 
-                        <div class="absolute inset-0 bg-brand-green/20 rounded-full blur-xl animate-pulse"></div>
+                        <div class="absolute inset-0 bg-brand-green/20 rounded-full blur-xl animate-pulse">
+                        </div>
 
 
                         <i
@@ -1101,7 +1141,8 @@
                             class="absolute inset-0 border border-brand-green/20 rounded-full animate-[spin_10s_linear_infinite] border-dashed">
                         </div>
                     </div>
-                    <h3 class="text-3xl lg:text-4xl font-black text-white mb-6">سرية تامة: يعمل 100% بدون إنترنت</h3>
+                    <h3 class="text-3xl lg:text-4xl font-black text-white mb-6">سرية تامة: يعمل 100% بدون
+                        إنترنت</h3>
                     <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed mb-6">
                         ندرك تماماً أن صور العائلات والأعراس في استوديوك هي أمانة. لذلك، تم بناء <strong
                             class="text-white">StudiFace</strong> ليكون مستقلاً تماماً. <span
@@ -1109,7 +1150,8 @@
                             (Offline)</span>.
                     </p>
                     <p class="text-gray-400 text-base max-w-2xl mx-auto">
-                        لا سحابة، لا خوادم خارجية، ولا جمع للبيانات. الذكاء الاصطناعي يعمل محلياً على قوة حاسوبك الشخصي
+                        لا سحابة، لا خوادم خارجية، ولا جمع للبيانات. الذكاء الاصطناعي يعمل محلياً على قوة
+                        حاسوبك الشخصي
                         باستخدام تقنيات تشفير عالية، لضمان خصوصية عملائك المطلقة.
                     </p>
                 </div>
@@ -1136,7 +1178,8 @@
 
                 <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">استثمر في راحة بالك.. <span
                         class="text-gradient-cyan">اختر خطتك!</span></h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">سواء كنت تريد التجربة، أو تفضل المرونة، أو تبحث عن
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">سواء كنت تريد التجربة، أو تفضل المرونة،
+                    أو تبحث عن
                     استثمار دائم لاستوديوك، لدينا الخيار المناسب لك.</p>
             </div>
 
@@ -1187,7 +1230,8 @@
                     <ul class="space-y-4 mb-8 flex-1 text-base">
                         <li class="flex items-start gap-3 text-white">
                             <i class="fa-solid fa-infinity text-brand-blue mt-1"></i>
-                            <span>استيعاب <strong class="text-brand-blue">لا محدود</strong> لصور الاستوديو.</span>
+                            <span>استيعاب <strong class="text-brand-blue">لا محدود</strong> لصور
+                                الاستوديو.</span>
                         </li>
                         <li class="flex items-start gap-3 text-gray-200">
                             <i class="fa-solid fa-laptop-file text-brand-blue mt-1 text-lg"></i>
@@ -1225,7 +1269,8 @@
                         <h3 class="text-2xl font-black text-white mb-2">الرخصة الدائمة</h3>
                         <div class="text-5xl font-tech font-bold text-brand-cyan">800 <span
                                 class="text-xl text-white">درهم</span></div>
-                        <div class="text-base font-sans text-brand-cyan/80 mt-2 font-bold">ادفع مرة واحدة.. واستخدمه
+                        <div class="text-base font-sans text-brand-cyan/80 mt-2 font-bold">ادفع مرة واحدة..
+                            واستخدمه
                             للأبد
                         </div>
                     </div>
@@ -1234,7 +1279,8 @@
                         <li
                             class="flex items-start gap-3 text-white bg-brand-cyan/10 p-2 rounded-lg border border-brand-cyan/20">
                             <i class="fa-solid fa-server text-brand-cyan mt-1 text-lg"></i>
-                            <span>رخصة شاملة لـ <strong class="text-brand-cyan text-base">5 تفعيلات</strong> (لأجهزتك
+                            <span>رخصة شاملة لـ <strong class="text-brand-cyan text-base">5 تفعيلات</strong>
+                                (لأجهزتك
                                 الحالية أو إذا اشتريت حواسيب جديدة مستقبلاً).</span>
                         </li>
                         <li class="flex items-start gap-3 text-white">
@@ -1271,7 +1317,8 @@
                     Reviews</span>
                 <h2 class="text-4xl lg:text-5xl font-black text-white mb-4">ماذا يقول <span
                         class="text-gradient-cyan">زملاؤك المصورون؟</span></h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">شهادات نعتز بها من أصحاب استوديوهات التصوير الذين
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">شهادات نعتز بها من أصحاب استوديوهات
+                    التصوير الذين
                     غيروا
                     طريقة عملهم ووفروا مئات الساعات بفضل StudiFace.</p>
             </div>
@@ -1290,9 +1337,11 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-cyan/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                        "صراحة هاد البروكرام فك ليا أزمة كبيرة ديال الأرشيف. العرسان كيجيو يقلبو على تصاورهم ديال شحال
+                        "صراحة هاد البروكرام فك ليا أزمة كبيرة ديال الأرشيف. العرسان كيجيو يقلبو على تصاورهم
+                        ديال شحال
                         هادي،
-                        وكنجبدهم ليهم فثواني. وفر عليا بزاف ديال الوقت وتخربيق الهارد ديسكات، تبارك الله عليكم!"
+                        وكنجبدهم ليهم فثواني. وفر عليا بزاف ديال الوقت وتخربيق الهارد ديسكات، تبارك الله
+                        عليكم!"
                     </p>
                     <div class="flex items-center gap-4 mt-auto pt-4 border-t border-dark-700">
                         <div
@@ -1317,8 +1366,10 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-green/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                        "يا جماعة البرنامج ده حرفياً سحر! الزبون يدخل بصورة باهتة على الموبايل، وبضغطة زر أطلعله النسخة
-                        الأصلية للطباعة وهو واقف. وفر عليا مجهود وتدوير بالساعات، وخلاني أكسب من صور قديمة كنت ناسيها."
+                        "يا جماعة البرنامج ده حرفياً سحر! الزبون يدخل بصورة باهتة على الموبايل، وبضغطة زر
+                        أطلعله النسخة
+                        الأصلية للطباعة وهو واقف. وفر عليا مجهود وتدوير بالساعات، وخلاني أكسب من صور قديمة
+                        كنت ناسيها."
                     </p>
                     <div class="flex items-center gap-4 mt-auto pt-4 border-t border-dark-700">
                         <div
@@ -1343,7 +1394,8 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-orange/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                        "أهم ميزة بالنسبة لي هي (الخصوصية والأمان). صور العوائل والمناسبات عندنا خط أحمر، وكون البرنامج
+                        "أهم ميزة بالنسبة لي هي (الخصوصية والأمان). صور العوائل والمناسبات عندنا خط أحمر،
+                        وكون البرنامج
                         يشتغل بدون إنترنت تماماً فهذا خلاني أشتريه وأنا مرتاح. أداء جبار وسريع جداً."
                     </p>
                     <div class="flex items-center gap-4 mt-auto pt-4 border-t border-dark-700">
@@ -1369,9 +1421,11 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-blue/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow dir-ltr text-left font-sans">
-                        "Franchement, c'est un outil indispensable pour tout studio. L'interface est super intuitive et
+                        "Franchement, c'est un outil indispensable pour tout studio. L'interface est super
+                        intuitive et
                         la
-                        vitesse de recherche est incroyable. Ça m'a sauvé la vie avec les anciens clients. Merci
+                        vitesse de recherche est incroyable. Ça m'a sauvé la vie avec les anciens clients.
+                        Merci
                         l'équipe !"
                     </p>
                     <div class="flex items-center gap-4 mt-auto pt-4 border-t border-dark-700">
@@ -1397,7 +1451,8 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-purple/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                        "يعطيكم الصحة، البرنامج خفيف بزاف ومفيهش مشاكل ميم مع هارد ديسك فيه تيرابايتات ديال التصاور.
+                        "يعطيكم الصحة، البرنامج خفيف بزاف ومفيهش مشاكل ميم مع هارد ديسك فيه تيرابايتات ديال
+                        التصاور.
                         ويجيب التصويرة في رمشة عين. خدمة نقية ومحترفة تستاهل كل دينار."
                     </p>
                     <div class="flex items-center gap-4 mt-auto pt-4 border-t border-dark-700">
@@ -1423,7 +1478,8 @@
                             class="fa-solid fa-quote-left text-3xl text-dark-600 group-hover:text-brand-red/30 transition-colors"></i>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                        "اشتريت النسخة الدائمة وارتحت. الذكاء الاصطناعي دقيق لدرجة إنه بيتعرف على الشخص حتى لو كان مغير
+                        "اشتريت النسخة الدائمة وارتحت. الذكاء الاصطناعي دقيق لدرجة إنه بيتعرف على الشخص حتى
+                        لو كان مغير
                         قصة
                         شعره أو كبر بالعمر. صرت أسلم الزباين صورهم القديمة بثواني، استثمار فعلاً بمكانه."
                     </p>
@@ -1455,15 +1511,18 @@
                 class="glass-panel rounded-3xl p-10 lg:p-16 mb-20 text-center border border-dark-600 bg-gradient-to-b from-dark-800 to-dark-900 relative">
                 <h2 class="text-4xl lg:text-5xl font-black text-white mb-6">لا تدع أرشيفك الضخم يكون <span
                         class="text-brand-red">مقبرة للصور!</span></h2>
-                <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-10">انضم إلى مصوري المستقبل واستعد السيطرة الكاملة
-                    على أرشيف الاستوديو الخاص بك اليوم. حول ساعات البحث المملة إلى ضغطة زر واحدة، وضاعف أرباحك من طباعة
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-10">انضم إلى مصوري المستقبل واستعد
+                    السيطرة الكاملة
+                    على أرشيف الاستوديو الخاص بك اليوم. حول ساعات البحث المملة إلى ضغطة زر واحدة، وضاعف
+                    أرباحك من طباعة
                     الصور القديمة.</p>
 
                 <a href="#download"
                     class="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-200 text-dark-950 px-10 py-5 rounded-2xl font-black text-xl transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(255,255,255,0.1)]">
                     <i class="fa-solid fa-download"></i> حمل البرنامج وابدأ الآن
                 </a>
-                <p class="mt-4 text-sm text-gray-500">حجم البرنامج خفيف • متوافق مع أنظمة Windows • لا يتطلب بطاقة
+                <p class="mt-4 text-sm text-gray-500">حجم البرنامج خفيف • متوافق مع أنظمة Windows • لا يتطلب
+                    بطاقة
                     ائتمانية</p>
             </div>
 
@@ -1485,7 +1544,8 @@
 
 
                     <p class="text-gray-400 mb-6 leading-relaxed max-w-sm">
-                        صُنع بحب وإتقان لتسهيل حياة المصورين واستوديوهات الإنتاج الفني. نؤمن بأن الذكاء الاصطناعي وجد
+                        صُنع بحب وإتقان لتسهيل حياة المصورين واستوديوهات الإنتاج الفني. نؤمن بأن الذكاء
+                        الاصطناعي وجد
                         لخدمة إبداعك، وليس العكس.
                     </p>
 
@@ -1513,41 +1573,49 @@
 
 
                 <div class="md:col-span-3">
-                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">روابط سريعة
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">
+                        روابط سريعة
                     </h4>
                     <ul class="space-y-3">
                         <li><a href="/how-it-works/"
                                 class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
-                                    class="fa-solid fa-angle-left text-xs"></i> دليل استخدام البرنامج</a></li>
+                                    class="fa-solid fa-angle-left text-xs"></i> دليل استخدام البرنامج</a>
+                        </li>
                         <li><a href="/faq/"
                                 class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2">
-                                <i class="fa-solid fa-angle-left text-xs"></i> الأسئلة الشائعة (FAQ)</a></li>
+                                <i class="fa-solid fa-angle-left text-xs"></i> الأسئلة الشائعة (FAQ)</a>
+                        </li>
                         <li><a href="/about/"
                                 class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
                                     class="fa-solid fa-angle-left text-xs"></i> قصتنا والتكنولوجيا</a></li>
                         <li><a href="/legal/"
                                 class="text-gray-400 hover:text-brand-cyan transition-colors flex items-center gap-2"><i
-                                    class="fa-solid fa-angle-left text-xs"></i> المركز القانوني والخصوصية</a></li>
+                                    class="fa-solid fa-angle-left text-xs"></i> المركز القانوني
+                                والخصوصية</a></li>
                     </ul>
                 </div>
 
 
                 <div class="md:col-span-4">
-                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">الدعم
+                    <h4 class="text-white font-bold text-lg mb-6 border-b border-dark-700 pb-2 inline-block">
+                        الدعم
                         والمساعدة</h4>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-4">
-                            <div class="bg-dark-800 p-2 rounded-lg text-brand-cyan border border-dark-600"><i
-                                    class="fa-solid fa-headset"></i></div>
+                            <div class="bg-dark-800 p-2 rounded-lg text-brand-cyan border border-dark-600">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
                             <div>
                                 <span class="block text-sm text-gray-500">تحتاج مساعدة؟</span>
-                                <a href="/contact/" class="text-white hover:text-brand-cyan font-bold">انتقل لمركز
+                                <a href="/contact/" class="text-white hover:text-brand-cyan font-bold">انتقل
+                                    لمركز
                                     الدعم الفني</a>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="bg-dark-800 p-2 rounded-lg text-brand-green border border-dark-600"><i
-                                    class="fa-brands fa-whatsapp"></i></div>
+                            <div class="bg-dark-800 p-2 rounded-lg text-brand-green border border-dark-600">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
                             <div>
                                 <span class="block text-sm text-gray-500">مبيعات وتفعيل (واتساب)</span>
                                 <a href="https://wa.me/212695106101"
@@ -1563,7 +1631,8 @@
 
             <div
                 class="border-t border-dark-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
-                <p>جميع الحقوق محفوظة &copy; 2026 لبرنامج <strong class="text-gray-300">StudiFace</strong></p>
+                <p>جميع الحقوق محفوظة &copy; 2026 لبرنامج <strong class="text-gray-300">StudiFace</strong>
+                </p>
                 <div class="flex items-center gap-2">
                     <span>صُنع بعقول عربية</span> <i class="fa-solid fa-heart text-brand-red animate-pulse"></i>
                 </div>
